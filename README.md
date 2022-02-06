@@ -16,3 +16,7 @@ To use these scripts:
 * These scripts assume 1 video track and that the first audio track is the intended audio track to include in the final mux
 * Re-Encoding video in the dolby vision 5 script still needs work
 * This script will automatically exclude HDR10+.  I've seen incompatibilities with TVs that do not support HDR10+.
+
+# Powershell Errors
+* If you recieve a policy error when trying to run the powershell script, run this command:
+* Set-ExecutionPolicy Unrestricted
