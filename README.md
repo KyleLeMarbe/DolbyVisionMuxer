@@ -6,7 +6,7 @@ This repo contains powershell files to automate conversion from .mkv (MakeMKV) f
 To use these scripts:
 1) Download yusesope's tools from here: https://mega.nz/file/mdU00TZR#bCiuGx6-7QaM2IeaIjNwdkmRWVA4hLti5rjLOOKESeE
 2) Download mp4muxer from here: https://github.com/DolbyLaboratories/dlb_mp4base
-3) Dowload ffmpeg from here: https://www.ffmpeg.org/download.html
+3) Download ffmpeg from here: https://www.ffmpeg.org/download.html
 4) Download powershell scripts from this repository
 5) Place all files in "c:\Video Tools" or directory of your choice
 6) Enjoy easy Dolby Vision conversions
