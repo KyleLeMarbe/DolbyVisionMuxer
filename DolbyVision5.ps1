@@ -70,7 +70,7 @@ if ($ConvertAudio){
     RunProcess "$VideoToolsDirectory\ffmpeg.exe" " -i ""$FilePath"" $Time -acodec ac3 -b:a 640k ""$DirectoryName\audio.ac3"" -y"
 }
 else {
-    RunProcess "$VideoToolsDirectory\ffmpeg.exe" " -i ""$FilePath"" -map 0:2 $Time -acodec copy ""$DirectoryName\audio.ac3"" -y"
+    RunProcess "$VideoToolsDirectory\ffmpeg.exe" " -i ""$FilePath"" $Time -acodec copy ""$DirectoryName\audio.ac3"" -y"
 }
 
 
