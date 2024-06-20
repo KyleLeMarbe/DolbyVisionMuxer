@@ -13,10 +13,10 @@ To use these scripts:
 7) Enjoy easy Dolby Vision conversions
 
 # Notes
-* I recommend setting your time to something around 300 seconds to start the encode.  This will allow you to view a sample and make sure things work on your TV.
-* These scripts assume 1 video track and that the first audio track is the intended audio track to include in the final mux
-* Re-Encoding video in the dolby vision 5 script still needs work
-* This script will automatically exclude HDR10+.  I've seen incompatibilities with TVs that do not support HDR10+.
+* I recommend using the time setting to test and using around 300 seconds to start.  This will allow you to view a sample and make sure things work on your TV.
+* These scripts assume 1 video track and all audio tracks are included in the final mux
+* Re-Encoding video in the dolby vision 5 script still needs work (This will likely be decomissioned.  DV 7 from disks convert well to DV8 but not to DV 5.)
+* This script will automatically exclude HDR10+.  HDR10+ and Dolby Vision together can cause incompatibilities with certain TVs.
 
 # Powershell Errors
 * If you recieve a policy error when trying to run the powershell script, run this command:
