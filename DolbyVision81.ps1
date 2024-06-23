@@ -66,7 +66,7 @@ RunProcess -file "$VideoToolsDirectory\ffmpeg.exe" -processArgs $combinedArgs
 
 
 Write-Host 'DEMUX & convert to mel...'
-RunProcess "$VideoToolsDirectory\dovi_tool.exe" " -m 2 convert --discard ""$DirectoryName\BL_EL_RPU.hevc"" -o ""$DirectoryName\BL_RPU.hevc"""
+RunProcess "$VideoToolsDirectory\dovi_tool.exe" " --drop-hdr10plus -m 2 convert --discard  ""$DirectoryName\BL_EL_RPU.hevc"" -o ""$DirectoryName\BL_RPU.hevc"""
 
 
 Write-Host 'Creating MP4 Video...'
