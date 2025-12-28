@@ -69,8 +69,16 @@ foreach ($VideoFile in $VideoFiles) {
         $OutputDirectory = $FinalOutputDirectory
     }
     
+    # Create output filename - append _AC3 if output is in same directory as input to avoid overwriting
+    if ($OutputDirectory -eq $DirectoryName) {
+        $OutputFileName = "$FileNameWithoutExt`_AC3.$FileExtension"
+    } else {
+        $OutputFileName = "$FileNameWithoutExt.$FileExtension"
+    }
+    
+    $OutputPath = "$OutputDirectory\$OutputFileName"
+    
     # Skip if output file already exists
-    $OutputPath = "$OutputDirectory\$FileNameWithoutExt.$FileExtension"
     if (Test-Path $OutputPath) {
         Write-Host "Output file already exists, skipping: $OutputPath"
         Write-Host ""
