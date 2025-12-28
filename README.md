@@ -45,6 +45,12 @@ Edit the batch script file before running to configure these settings:
 4. The script will process all applicable files in the directory
 5. Progress and results will be displayed for each file
 
+### Batch Script Behavior Notes
+* **DolbyVision5_Batch.ps1** and **DolbyVision81_Batch.ps1** will create output .mp4 files with the same base name as the input .mkv files
+* **AudioConversion_Batch.ps1** will append "_AC3" to the filename when the output directory is the same as the input directory (to avoid overwriting the original file). If you specify a different output directory, it will use the original filename.
+* All batch scripts will automatically skip files if the output file already exists
+* Intermediate/temporary files are automatically cleaned up after each file is processed
+
 # Notes
 * I recommend using the time setting to test and using around 300 seconds to start.  This will allow you to view a sample and make sure things work on your TV.
 * These scripts assume 1 video track and all audio tracks are included in the final mux
